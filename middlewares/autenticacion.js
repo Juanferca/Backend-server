@@ -13,7 +13,7 @@ exports.verificaToken = function( req, res, next) {
         if( err ) {
             return res.status(401).json({
                 ok: false,
-                mensaje: 'Tokem incorrecto',
+                mensaje: 'Token incorrecto',
                 errors: err
                  });
         }
