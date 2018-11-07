@@ -1,15 +1,10 @@
 var express = require('express');
-
-
 var app = express();
 
 const path = require('path');
 const fs = require('fs');
 
-
-
 // Rutas
-
 app.get('/:tipo/:img', ( req, res, next ) => {
 
     var tipo = req.params.tipo;
@@ -23,5 +18,4 @@ app.get('/:tipo/:img', ( req, res, next ) => {
         res.sendFile(pathNoImagen);
     }
 });
-
 module.exports = app;
